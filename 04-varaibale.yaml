@@ -1,0 +1,7 @@
+- name: variable declared here
+  hosts: web
+  tasks: 
+  - name: print the information
+    ansible.buitin.debug:
+      msg: "Hi started devops course it is completed by 4 months"
+      
