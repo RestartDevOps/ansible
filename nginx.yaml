@@ -1,7 +1,7 @@
 - name: nginx installation
   hosts: web
   tasks: lists/modules/collections
-   - name: install nginx
-     ansible.builtin.package:
+  - name: install nginx
+    ansible.builtin.package:
       name: httpd
       state: present #latest/
