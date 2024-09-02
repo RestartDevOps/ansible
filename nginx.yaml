@@ -3,5 +3,5 @@
   tasks: lists/modules/collections
    - name: install nginx
      ansible.builtin.package:
-        name: httpd
-        state: present #latest/
+      name: httpd
+      state: present #latest/
