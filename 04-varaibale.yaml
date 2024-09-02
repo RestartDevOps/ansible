@@ -2,5 +2,5 @@
   hosts: web
   tasks: #lists/tasks/collections
   - name: print the message information
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "Hi started devops course it is completed by 4 months"
