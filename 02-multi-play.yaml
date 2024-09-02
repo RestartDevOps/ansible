@@ -1,0 +1,15 @@
+#PLAY1
+- name: multiplays ins singlke play book
+  hosts: web
+  tasks: #lists/collections/modules
+  - name: to print the message
+    ansible.builtin.debug:
+    msg: "This is from PLAY-01 and TASK-01"
+#PLAY2
+- name: multiplays ins singlke play book
+  hosts: web
+  tasks: #lists/collections/modules
+  - name: to print the message
+    ansible.builtin.debug:
+     msg: "This is from PLAY-01 and TASK-01"
+    
