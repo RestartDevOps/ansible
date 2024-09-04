@@ -1,6 +1,0 @@
-- name: variables to  print
-  hosts: web
-  tasks: #lists/tasks/collections
-  - name: print the message information
-    ansible.builtin.debug:
-     msg: "Hi started devops course it is completed by 4 months"
