@@ -16,6 +16,10 @@
       ci: jenkins
       cm: ansible
       cloud: aws
+      aws:
+      - s3
+      - ec2
+      - vpc
   tasks: #lists/modules/collections
   - name: print information
     ansible.builtin.debug:
