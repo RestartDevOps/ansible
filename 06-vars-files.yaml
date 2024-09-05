@@ -1,7 +1,8 @@
 - name: To print the variables from files
   hosts: web
   vars_files:
-   05-task-vars.yaml:
-   tasks:
+   - 05-task-vars.yaml:
+  tasks:
   - name: To print the variables from files
-    msg: " Hi all we started {{COURSE}} course and duration is {{DURATION}} and trainer is {{TRAINER}}"
+    ansible.builtin.debug:
+     msg: " Hi all we started {{COURSE}} course and duration is {{DURATION}} and trainer is {{TRAINER}}"
