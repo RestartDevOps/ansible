@@ -1,5 +1,5 @@
 - name: print information
-  hosts:
+  hosts: web
   vars:
     COURSE: "Devops"
     DURATION: "120+H"
