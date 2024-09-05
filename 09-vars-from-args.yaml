@@ -1,0 +1,6 @@
+- name: To pass arguements
+  hosts: web
+  tasks:
+  - name: To pass arguements
+    ansible.builtin.debug:
+      msg: "Hello Good {{NAME}} good {{GREETINS}}"
