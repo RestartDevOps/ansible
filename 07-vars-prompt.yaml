@@ -3,13 +3,13 @@
   vars_prompt:
   - name: COURSE
     prompt: " please enter the course name "
-    private: false
+    private: false #entered data is not confential true means confidental
   - name: DURATION
-    prompt: " please enter the duration time "
-    private: false
+    prompt: " please enter the duration time " 
+    private: false #entered data is not confential true means confidental
   - name: TRAINER
     prompt: " please enter trainer name "
-    private: false
+    private: false #entered data is not confential true means confidental
   tasks:
   - name: To read and print the variables while executing script
     ansible.builtin.debug:
