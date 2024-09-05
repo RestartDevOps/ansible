@@ -3,4 +3,4 @@
   tasks:
   - name: To pass arguements
     ansible.builtin.debug:
-      msg: "Hello Good {{NAME}} good {{GREETINGS}}"
+      msg: "Hello {{NAME}} good {{GREETINGS}}"
