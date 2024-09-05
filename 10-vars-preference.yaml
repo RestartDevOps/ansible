@@ -1,0 +1,17 @@
+- name: variable preferences 
+  hosts: web
+  vars:
+   COURSE: "DevOps"
+   DURATION: "120+H"
+   TRAINER: " Jakeer"
+  tasks: 
+  - name: print the variables
+  vars:
+    COURSE: "DevOps"
+    DURATION: "120+H"
+    TRAINER: " Jakeer"
+    ansible.builtin.debug:
+     msg: " Hi we started {{COURSE}}", & dutration is  {{DURATION}}, & {{TRAINER}}"
+
+
+  
