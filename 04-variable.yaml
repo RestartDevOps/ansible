@@ -1,0 +1,6 @@
+- name: To print the variables
+  hosts: web
+  tasks: #commands/lists/cpllections
+  - name: to Print the variables
+    ansible.builtin.debug:
+     msg " HI all we started devops course duration 120+ hours trainer Jakeer "
