@@ -7,4 +7,4 @@
    TRAINER: Jakeer
   - name: to Print the variables
     ansible.builtin.debug:
-     msg: " HI all we started{{COURSE}} course duration is {{DURATION}} hours trainer is {{TRAINER}} "
+     msg: " HI all we started {{ COURSE }} course duration is {{ DURATION }} hours trainer is {{ TRAINER }} "
