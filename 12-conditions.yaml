@@ -1,0 +1,17 @@
+- name: print conditions statement
+  hosts: web
+  vars_prompt:
+  - name: my_number
+   prompt: "please enter your number value"
+   private: false
+tasks:
+ - name: "given {{my_number}} is lessthan 20"
+   ansible.builtin.debug:
+    msg: "you have entered number is {{my_number}}"
+    when: my_number | int  <=20
+
+ - name: "given {{my_number}} is greaterthan 20"
+   ansible.builtin.debug:
+    msg: "you have entered number is {{my_number}}"
+    when: my_number | int  >=20
+
