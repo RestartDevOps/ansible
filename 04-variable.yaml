@@ -1,6 +1,10 @@
 - name: To print the variables
   hosts: web
   tasks: #commands/lists/cpllections
+  vars:
+   COURSE: devops
+   DURATION: 120+
+   TRAINER: Jakeer
   - name: to Print the variables
     ansible.builtin.debug:
-     msg: " HI all we started devops course duration 120+ hours trainer Jakeer "
+     msg: " HI all we started{{COURSE}} course duration is {{DURATION}} hours trainer is {{TRAINER}} "
