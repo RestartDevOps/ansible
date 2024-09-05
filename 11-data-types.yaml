@@ -12,10 +12,10 @@
     - KUBERNETES
     - TERRAFORM
     live: true #boolean
-    tools: #map/dictonary
-      ci: jenkins
-      cm: ansible
-      cloud: aws
+    TOOLS: #map/dictonary
+    -  ci: jenkins
+    -  cm: ansible
+    - cloud: aws
       aws:
       - s3
       - ec2
@@ -23,4 +23,4 @@
   tasks: #lists/modules/collections
   - name: print information
     ansible.builtin.debug:
-      msg: "Hi we started {{COURSE}},duration is {{DURATION}}, trainer is {{TRAINER}},live is {{live}},tools are {{tools}}"
+      msg: "Hi we started {{COURSE}},duration is {{DURATION}}, trainer is {{TRAINER}},live is {{live}},tools are {{TOOLS}}"

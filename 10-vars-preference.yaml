@@ -11,7 +11,7 @@
     DURATION: "120+H"
     TRAINER: " Jakeer"
     ansible.builtin.debug:
-     msg: " Hi we started {{COURSE}}", & dutration is  {{DURATION}}, & {{TRAINER}}"
+     msg: " Hi we started {{COURSE}}",  dutration is  {{DURATION}},  {{TRAINER}}"
 
 
   
