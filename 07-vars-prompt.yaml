@@ -3,12 +3,14 @@
   vars_prompt:
   - name: COURSE
     prompt: " please enter the course name "
+    private: false
   - name: DURATION
     prompt: " please enter the duration time "
+    private: false
   - name: TRAINER
     prompt: " please enter trainer name "
+    private: false
   tasks:
   - name: To read and print the variables while executing script
     ansible.builtin.debug:
       msg: " Hi you have entered name is {{COURSE}} & duration is {{DURATION}} & trainer is {{TRAINER}}"
-      
