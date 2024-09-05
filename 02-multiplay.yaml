@@ -1,0 +1,5 @@
+- name: To print message
+  hosts: web
+  tasks: #lists of tasks/modules/collections
+  - name: msg print
+    ansible.builtin.debug:
