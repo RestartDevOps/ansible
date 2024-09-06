@@ -7,11 +7,12 @@
 tasks:
  - name: "given {{my_number}} is lessthan 20"
    ansible.builtin.debug:
-    msg: "you have entered number is {{my_number}}"
+    msg: "you have entered number is {{my_number}} is less than 20"
     when: my_number | int  <=20
 
  - name: "given {{my_number}} is greaterthan 20"
    ansible.builtin.debug:
-    msg: "you have entered number is {{my_number}}"
+    msg: "you have entered number is {{my_number}} is graterthan or equal to "
     when: my_number | int  >=20
 
+  
