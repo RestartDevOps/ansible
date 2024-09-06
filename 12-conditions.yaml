@@ -2,7 +2,7 @@
   hosts: web
   vars_prompt:
   - name: my_number
-   prompt: "please enter your number value"
+   prompt: please enter your number value
    private: false
  tasks:
  - name: "given {{my_number}} is lessthan 20"
