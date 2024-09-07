@@ -6,7 +6,7 @@
   vars:
     subnet_id: subnet-0c84761640a85bd98 # replace with your subnet id
     sg_id: "sg-0760e95642472919f"
-    ami_id: "ami-09c813fb71547fc4f" #ami-09c813fb71547fc4f
+    ami_id: "ami-09c813fb71547fc4f"
     instances:
     - mysql
     - backend
@@ -32,9 +32,9 @@
   - name: print the output
     ansible.builtin.debug:
       msg: "{{ ec2_instances }}"
-   
-   #private IP R53
-- name: create r53 private records
+
+  #private IP R53
+  - name: create r53 private records
     amazon.aws.route53:
       state: present
       zone: "{{ zone }}"
@@ -46,7 +46,7 @@
       overwrite: true
     loop: "{{ ec2_instances.results }}"
 
-- name: create r53 public record for frontend
+  - name: create r53 public record for frontend
     amazon.aws.route53:
       state: present
       zone: "{{ zone }}"
