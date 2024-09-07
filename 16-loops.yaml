@@ -7,8 +7,8 @@
     ansible.builtin.debug:
       msg: "print names are {{ item }} "
     loop:
-     Jakeer
-     chandra
-     rajesh
-     varun
-     ajith
+    - Jakeer
+    - chandra
+    - rajesh
+    - varun
+    - ajith
